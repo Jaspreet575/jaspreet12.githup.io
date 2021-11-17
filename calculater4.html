@@ -1,0 +1,34 @@
+<html lang="en">
+<title>Calculator</title>
+ </head>
+ <body>
+ <table>
+ 
+ <tr>
+ 
+ <td>Expression: </td>
+
+ 
+ <tr>
+ <td> <input type ="text" name="expression" value="" id="operation"></td>
+ </tr>
+ <tr>
+ <td>
+ </td>
+ <td style="text-align:center">
+ <button type ="button" name"evaluate" onclick ="operation()" id="eva">evaluate</button>
+ </td>
+ </tr>
+ <table>
+ <script type ="text/javascript">
+ function operation()
+ {
+ var oper =document.getElementById('operation').value;
+ var res =eval(oper);
+ document.getElementById('operation').value =res;
+ }
+ </script>
+ </body>
+ </html>
+ 
+ 
